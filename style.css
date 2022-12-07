@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+}
+
+
+.sideImage img {
+    width: 33vw;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    background-color: black;
+    position: absolute;
+}
+
+.logoText {
+    font-family: Norse-Bold;
+    font-size: 128px;
+    color: white;
+    align-self: center;
+}
