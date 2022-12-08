@@ -62,15 +62,17 @@
 }
 
 .mainContent {
-    padding: 15vh;
-    padding-left: 3vw;
+    width: 77vw;
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
+    background-color: teal;
 }
 
 .formIntro {
     display: flex;
+    padding-top: 10vh;
+    margin-left: 3vh;
     flex-direction: column;
     margin-bottom: 5vh;
     text-align: left;
@@ -79,6 +81,38 @@
     font-size: 20px;
 }
 
+.formContainer {
+    padding: 3vh;
+    border-bottom: 2px solid black;
+    background-color: antiquewhite;
+    margin-bottom: 3vh;
+}
+
 .formHeading {
     margin-bottom: 2vh;
+}
+
+.form fieldset{
+    border: none;
+    display: flex;
+    gap: 7vw;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitContainer {
+    margin-left: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#btnSubmit {
+    padding: 10px;
+    width: 200px;
+    color: white;
+    background-color: #596D48;
 }
