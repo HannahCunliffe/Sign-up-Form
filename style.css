@@ -60,3 +60,25 @@
 .photoCredit a {
     color: white;
 }
+
+.mainContent {
+    padding: 15vh;
+    padding-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.formIntro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    text-align: left;
+    width: 75%;
+    gap: 1vh;
+    font-size: 20px;
+}
+
+.formHeading {
+    margin-bottom: 2vh;
+}
