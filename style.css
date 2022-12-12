@@ -99,7 +99,7 @@
     gap: 4vw;
 }
 
-.form fieldset input {
+.input {
     width: 250px;
     padding: 8px;
     margin-bottom: 25px;
@@ -122,8 +122,6 @@
     border: 1px solid blue;
 }
 
-
-
 form fieldset label {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
@@ -136,6 +134,25 @@ form fieldset label {
 .field {
     display: flex;
     flex-direction: column;
+}
+
+.field p {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    position: relative;
+    bottom: 20px;
+}
+
+/* class to change input display when the field is invalid */
+/* !important gives the border colour priority over other styles */
+.invalid {
+    border: 1px solid red !important;
+}
+
+.valid {
+    border: 1px solid green !important;
 }
 
 .submitContainer {

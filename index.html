@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer="async"></script>
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -36,39 +36,40 @@
                     <fieldset>
                         <div class="field">
                             <label for="inputFirstName">First Name</label>
-                            <input type="text" name="firstName" id="inputFirstName">
+                            <input type="text" name="firstName" id="inputFirstName" class="input" required>
                         </div>
                         <div class="field">
                             <label for="inputLastName">Last Name </label>
-                            <input type="text" name="lastName" id="inputLastName">
+                            <input type="text" name="lastName" id="inputLastName" class="input" required>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="field">
                             <label for="inputEmail">Email</label>
-                            <input type="email" name="email" id="inputEmail">
+                            <input type="email" name="email" id="inputEmail" class="input" required>
                         </div>
                         <div class="field">
                             <label for="inputTel">Phone Number</label>
-                            <input type="tel" name="telNo" id="inputTel">
+                            <input type="tel" name="telNo" id="inputTel" class="input" required>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="field">
                             <label for="">Password</label>
-                            <input type="password" name="password" id="inputPassword">
+                            <input type="password" name="password" id="inputPassword" class="input" required>
+                            <p id="passwordMessage" class="passwordMessage">*Passwords do not match</p>
                         </div>
                         <div class="field">
                             <label for="">Confirm Password</label>
-                            <input type="password" name="passwordRepeat" id="inputPasswordRepeat">
+                            <input type="password" name="passwordRepeat" id="inputPasswordRepeat" class="input" required>
                         </div>
                     </fieldset>
-                </form>
             </div>
             <div class="submitContainer">
-                <button type="submit" id="btnSubmit">Create Account</button>
+                <button type="submit" id="btnSubmit" onclick="">Create Account</button>
                 <p> Already have an account? <a href=""> Log in </a> </p>
             </div>
+            </form>
         </div>
     </div>
 </body>
