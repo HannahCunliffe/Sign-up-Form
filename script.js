@@ -6,6 +6,7 @@ let passwordMessage = document.getElementById("passwordMessage");
 
 passwordInput.classList.add("invalid");
 passwordRepeat.classList.add("invalid")
+passwordInput.validity.valid = false;
 // compare the text in both password fields and change the css applied
 // based on if they match or not
 function checkMatch() {
@@ -16,6 +17,8 @@ function checkMatch() {
         passwordRepeat.classList.add("valid");
         passwordMessage.innerText = "*Passwords match";
         passwordMessage.style.color = "green";
+        passwordInput.validity.valid = true;
+        passwordInput.setCustomValidity("");
     } else {
         passwordInput.classList.remove("valid");
         passwordRepeat.classList.remove("valid");
@@ -23,6 +26,8 @@ function checkMatch() {
         passwordRepeat.classList.add("invalid");
         passwordMessage.innerText = "*Passwords do not match";
         passwordMessage.style.color = "red";
+        passwordInput.validity.valid = false;
+        passwordInput.setCustomValidity("Passwords do not match");
     }
 }
 
